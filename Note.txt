@@ -20,3 +20,35 @@ git init
 
 Modifico e/o creo file poi:
 git add --all
+(Posso verificare sempre con git status)
+
+Alla fine delle modifiche do:
+git commit -m "<nome commit>" ad esempio git commit -m "First commit Bizza Platform"
+
+Lo storico di git si vede con:
+git log
+
+Git + GitHub
+Dopo aver creato un account in GitHub, creare un repository su GitHub.
+Carico il repository locale in GitHub con:
+git remote add origin https://github.com/MirCar1071657/BizzaPlatform.git
+git branch -M main
+git push -u origin main
+
+In GitHub ora ho sotto MirCar1071657 un repository BizzaPlatform ed un commit chiamato "First commit Bizza Platform"
+
+(provo a completare cap1 del libro "Fullstack Flask and React": in pratica manca una parte del file Note.txt
+	git add --all
+	git commit -m "Capitolo 1"
+	git push origin
+)
+
+
+Per creare un branch e poi verificarlo usare:
+git branch <nome-branch>
+git branch
+
+Per eliminare una commit usare:
+git reset --hard HEAD~1 (toglie la commit più recente) MA MODIFICA I FILES DI ORIGINE!!!
+poi per github dare:
+git push origin main --force
