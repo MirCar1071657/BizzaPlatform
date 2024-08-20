@@ -1,0 +1,22 @@
+python -m venv django-env 		// (la prima volta)
+django-env\Scripts\activate (per attivare l'ambiente virtuale)
+pip install Flask		// (la prima volta)
+Creata la directory bizza (mkdir bizza, cd bizza), creo app.py
+creo .flaskenv e inserisco:
+	FLASK_APP=app.py
+	FLASK_ENV=development
+	FLASK_DEBUG=true
+pip install python-dotenv
+flask run
+deactivate
+
+Git e GitHub
+git config --global user.name "MirCar1071657"
+git config --global user.email "mirco1972@libero.it"
+Posso controllare con git config --list
+
+Nella directory che voglio tracciare dare:
+git init
+
+Modifico e/o creo file poi:
+git add --all
